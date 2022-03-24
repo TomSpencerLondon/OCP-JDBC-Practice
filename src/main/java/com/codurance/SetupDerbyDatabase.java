@@ -8,7 +8,7 @@ import java.sql.SQLException;
 
 public class SetupDerbyDatabase {
   public static void main(String[] args) throws Exception {
-    String url = "jdbc:derby:zoo;create=true";
+    String url = "jdbc:derby://localhost:1527/zoo;create=true";
     try (Connection conn = DriverManager.getConnection(url)) {
 
       // run(conn,"DROP TABLE names");
